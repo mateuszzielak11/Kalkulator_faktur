@@ -32,7 +32,7 @@ jobs:
       - name: 5. Uruchomienie testów jednostkowych (Pytest - FR1, FR2, NFR3)
         run: pytest -v
 
-    - name: 6. Uruchomienie kalkulatora z poświadczeniami Service Principal (NFR1)
+      - name: 6. Uruchomienie kalkulatora z poświadczeniami Service Principal (NFR1)
         env:
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
